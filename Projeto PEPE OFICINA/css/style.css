@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
-
+/*ZERAR CONFIGURAÇÃO PADRÃO*/
 * {
     padding: 0;
     margin: 0;
@@ -9,9 +9,27 @@
     list-style: none;
 }
 
-
 body {
     font-size: 100%;
+
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #2A2A2A;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
 }
 
 
@@ -26,14 +44,9 @@ header {
     color: white;
     z-index: 1000;
     font-family: 'Sarala', sans-serif;
-    transition: all .50s ease;
 }
 
-
-
-
 /*CONFIGURAÇÃO LOGO PEPE*/
-
 .logo-pepe {
     position: absolute;
     width: 271px;
@@ -43,14 +56,13 @@ header {
     border-radius: 10px;
 }
 
-
 /* ESTILIZAÇÃO NAVBAR*/
-
 .navbar {
     display: flex;
     gap: 20px;
 }
 
+/* ESTILIZAÇÃO DAS LETRAS NAVBAR*/
 .navbar a {
     color: white;
     font-style: normal;
@@ -60,19 +72,21 @@ header {
     transition: 0.2s;
     display: inline-block;
     left: 90px;
-    transition: all .50s ease;
 }
 
+/* EFEITO HOVER DA NAVBAR */
 .navbar a:hover {
     color: #FFCA08;
 
 }
 
+/* EFEITO HOVER DA NAVBAR */
 .navbar a span {
     position: absolute;
     display: block;
 }
 
+/* EFEITO HOVER DA NAVBAR */
 .navbar a span:nth-child(1) {
     bottom: 0;
     left: -100%;
@@ -81,6 +95,7 @@ header {
     background: linear-gradient(90deg, transparent, #FFCA08);
 }
 
+/* EFEITO HOVER DA NAVBAR */
 .navbar a:hover span:nth-child(1) {
 
     left: 100%;
@@ -89,93 +104,135 @@ header {
 }
 
 /*ICONE REDE SOCIAL*/
-
 .icones-redes-sociais {
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: all .50s ease;
 }
 
 .icones-redes-sociais #logo-facebook {
-    width: 23px;
-    height: 23px;
+    width: 27px;
+    height: 26px;
 }
 
 .icones-redes-sociais #logo-youtube {
-    width: 25px;
+    width: 26px;
     height: 25px;
 }
 
 .icones-redes-sociais #logo-instagram {
-    width: 33px;
-    height: 30px;
+    width: 26px;
+    height: 25px;
 }
 
 .icones-redes-sociais #logo-brazil {
-    width: 32px;
-    height: 20px;
+    width: 26px;
+    height: 25px;
     cursor: pointer;
 }
 
-/*ICONE MENU RESPONSIVEL*/
-
+/*ICONE MENU RESPONSIVEL
 #menu-icon {
     font-size: 35px;
     color: white;
     cursor: pointer;
     display: none;
+}*/
+
+/*CONFIGURAÇÃO IMAGEM BACKGROUND*/
+.background-configuration {
+    background-image: url(../assets/imagem-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
 }
 
-@media(max-width: 1280px) {
-    header {
-        padding: 14px 2%;
-        transition: .2s;
-    }
-
-    .navbar a {
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
+.texto-background {
+    display: flex;
+    flex-direction: column;
 }
 
-@media(max-width: 1090px) {
-    #menu-icon {
-        display: block;
-    }
+.texto-background h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-left: 830px;
+    padding-top: 70px;
+}
 
-    header {
-        justify-content: space-between;
-    }
+/*CONFIGURAÇÃO BOTÃO*/
+.botao-conheca {
+    width: 209px;
+    height: 49px;
+    border: 1px solid #FFF500;
+    border-radius: 26px;
+    background: transparent;
+    color: white;
+    font-family: 'Sarala';
+    background: rgba(0, 0, 0, 0.514);
+    font-weight: bold;
+}
+.botao-conheca:hover {
+    box-shadow: 0 0 10px #FFCA08, 0 0 40px #FFCA08, 0 0 80px #FFCA08;
+    background-color: #FFCA08;
+    color: black;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.botao {
+    padding-left: 1150px;
+    padding-top: 230px;
+}
 
-    .navbar {
-        position: absolute;
-        top: 16.4%;
-        right: -100%;
-        width: 270px;
-        height: 43vh;
-        background: #2A2A2A;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 0px 0px 0px 15px;
-        transition: all .50s ease;
-    }
+footer {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background: #2A2A2A;
+}
 
-    .navbar a {
-        display: block;
-        margin: 0;
-        padding: 0;
-        transform: all .50s ease;
-    }
+/*LOGO FOOTER*/
+.logo-pepe-footer {
+    border-radius: 10px;
+}
 
-    .navbar a:hover {
-        color: #FFCA08;
-        transform: translateY(5px);
-    }
+.conteudo {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .navbar .open {
-        right: 2%;
-    }
+/*CONFIGURAÇÃO TEXTO FOOTER*/
+.conteudo p {
+    font-family: 'Sarala';
+    font-size: 17px;
+    color: #FFFFFF;
+}
 
+#text1 {
+    padding-top: 10px;
+}
+
+#text2 {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#text3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#text4 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.linha {
+    border-top: 1px solid #FFFFFF;
+    width: 80%;
 }
