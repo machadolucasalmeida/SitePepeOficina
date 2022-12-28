@@ -11,7 +11,7 @@
 
 body {
     font-size: 100%;
-
+    background: #2A2A2A;
 }
 
 /* scrollbar */
@@ -34,6 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 
 header {
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,7 +43,6 @@ header {
     height: 115px;
     background: #2A2A2A;
     color: white;
-    z-index: 1000;
     font-family: 'Sarala', sans-serif;
 }
 
@@ -131,6 +131,7 @@ header {
     cursor: pointer;
 }
 
+
 /*ICONE MENU RESPONSIVEL
 #menu-icon {
     font-size: 35px;
@@ -141,7 +142,7 @@ header {
 
 /*CONFIGURAÇÃO IMAGEM BACKGROUND*/
 .background-configuration {
-    background-image: url(../assets/imagem-background.png);
+    background-image: url(../assets/img/imagem-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -175,6 +176,7 @@ header {
     background: rgba(0, 0, 0, 0.514);
     font-weight: bold;
 }
+
 .botao-conheca:hover {
     box-shadow: 0 0 10px #FFCA08, 0 0 40px #FFCA08, 0 0 80px #FFCA08;
     background-color: #FFCA08;
@@ -182,16 +184,41 @@ header {
     transition: all 1s ease;
     cursor: pointer;
 }
+
 .botao {
     padding-left: 1150px;
     padding-top: 230px;
+    position: absolute;
 }
+
+/*CONFIGURAÇÃO DO TEXTO MAIN*/
+.text-main h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+.text-main p {
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
 
 footer {
     width: 100%;
     height: 100%;
     left: 0px;
     background: #2A2A2A;
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
 }
 
 /*LOGO FOOTER*/

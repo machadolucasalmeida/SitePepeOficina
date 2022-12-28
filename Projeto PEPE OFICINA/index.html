@@ -9,18 +9,18 @@
     <title>PEPE OFICINA</title>
 
     <!--LINKS-->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javacript" src="javascript/script.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <!--LOGO-->
-        <a href="index.html"><img class="logo-pepe" src="assets/PEPE_LOGO_PPP.png" alt="Logo da PEPE OFICINA"></a>
+        <a href="index.html"><img class="logo-pepe" src="assets/img/PEPE_LOGO_PPP.png" alt="Logo da PEPE OFICINA"></a>
 
         <!--MENU NAVBAR-->
         <ul class="navbar">
@@ -35,45 +35,109 @@
         <div class="icones-redes-sociais">
 
             <a href="https://www.facebook.com/pepeoficina/" target="_blank"><img id="logo-facebook"
-                    src="assets/logo_facebook.png" alt="Logo da PEPE OFICINA"></a>
+                    src="assets/icon/logo_facebook.png" alt="Logo da PEPE OFICINA"></a>
 
             <a href="https://www.youtube.com/channel/UCElqYywSWgTDsj_i5SAQFgA" target="_blank"><img id="logo-youtube"
-                    src="assets/logo_youtube.png" alt="Logo da PEPE OFICINA"></a>
+                    src="assets/icon/logo_youtube.png" alt="Logo da PEPE OFICINA"></a>
 
             <a href="https://www.instagram.com/pepecentroautomotivo/" target="_blank"><img id="logo-instagram"
-                    src="assets/logo_instagram.png" alt="Logo da PEPE OFICINA"></a>
+                    src="assets/icon/logo_instagram.png" alt="Logo da PEPE OFICINA"></a>
 
             <div class="select-language">
-                <a href="index.html"><img id="logo-brazil" src="assets/logo_brazil.png" alt="Logo da PEPE OFICINA"></a>
+                <a href="index.html"><img id="logo-brazil" src="assets/icon/logo_brazil.png"
+                        alt="Logo da PEPE OFICINA"></a>
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </div>
 
-            <!--BOTÃO RESPONSIVIDADE
-            <div class="bx bx menu" id="menu-icon">
-                <ion-icon name="menu-outline"></ion-icon>
-            </div>
-            -->
-
+            <!--BOTÃO RESPONSIVIDADE-->
+            
         </div>
     </header>
 
     <main>
 
+        <!--IMAGEM MAIN CONFIGURATION-->
         <section class="background-configuration">
             <div class="texto-background">
                 <h1>Você Dirige Nós Consertamos <br> O Seu Desespero é a Nossa Alegria</h1>
-                <div class="botao">
-                    <a href="quem somos.html"><button class="botao-conheca">Conheça a PEPE OFICINA</button></a>
-                </div>
+            </div>
+            <div class="botao">
+                <a href="quem somos.html"><button class="botao-conheca">Conheça a PEPE OFICINA</button></a>
             </div>
         </section>
 
+        <!---SLIDESHOW-->
+        <section class="confg-slidershow">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/img/slideshow/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/6.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/7.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/8.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/9.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/slideshow/10.jpeg" alt="">
+                </div>
+                <div class="navigation">
+                    <i class="fas fa-chevron-left prev-btn"></i>
+                    <i class="fas fa-chevron-right next-btn"></i>
+                </div>
+                <div class="navigation-visibility">
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                </div>
+            </div>
+            <script src="javascript/script-slideshow.js"></script>
+        </section>
+
+        <!--TEXTO CONTEUDO MAIN-->
+        <section class="text-main">
+            <h1>Particular, Segurado ou Terceiro <br></h1>
+
+            <p> Um centro automotivo completo e diferente. Fazemos desde uma simples troca de óleo, passando pela
+                funilaria e repintura até o embelezamento. <br>
+
+                Diferente desde o atendimento com sala de espera climatizada, com prazos de entrega garantidos,
+                materiais de alta qualidade, peças originais e com certificação. <br>
+
+                Você pode acompanhar o seu carro, verificando a qualidade do serviço em cada etapa. </p>
+
+        </section>
     </main>
 
     <footer>
         <div class="conteudo">
             <!--LOGO-->
-            <img class="logo-pepe-footer" src="assets/PEPE_LOGO_PPP.png" alt="Logo da PEPE OFICINA"></a>
+            <img class="logo-pepe-footer" src="assets/img/PEPE_LOGO_PPP.png" alt="Logo da PEPE OFICINA"></a>
             <p id="text1">Você Dirige Nós Consertamos</p>
             <p id="text2">Tel: (16) 3289-1120 | E-Mail: atendimento@pepeoficina.com.br</p>
             <p id="text3">PEPE OFICINA | Desde 1973 | Mais de 93.000 Clientes Atendidos</p>
