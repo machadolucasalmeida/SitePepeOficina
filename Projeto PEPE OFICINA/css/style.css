@@ -34,36 +34,37 @@ body::-webkit-scrollbar-thumb {
 
 
 header {
-    z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.6s;
     background: #2A2A2A;
     color: white;
     font-family: 'Sarala', sans-serif;
 }
 
-/*CONFIGURAÇÃO LOGO PEPE*/
-.logo-pepe {
-    position: absolute;
-    width: 271px;
-    height: 100px;
-    left: 17px;
-    top: 7px;
-    border-radius: 10px;
+/*NAVBAR CONFIGURATION*/
+header.sticky {
+    background: #2A2A2A;
+    padding: 15px 100px;
+
 }
 
-/* ESTILIZAÇÃO NAVBAR*/
-.navbar {
+header .menu {
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
-/* ESTILIZAÇÃO DAS LETRAS NAVBAR*/
-.navbar a {
+header .menu a {
     color: white;
     font-style: normal;
     font-size: 15px;
@@ -74,20 +75,19 @@ header {
     left: 90px;
 }
 
-/* EFEITO HOVER DA NAVBAR */
-.navbar a:hover {
+/*NAVBAR HOVER CONFIGURATION*/
+header .menu a:hover {
     color: #FFCA08;
-
 }
 
 /* EFEITO HOVER DA NAVBAR */
-.navbar a span {
+header .menu a span {
     position: absolute;
     display: block;
 }
 
 /* EFEITO HOVER DA NAVBAR */
-.navbar a span:nth-child(1) {
+header .menu a span:nth-child(1) {
     bottom: 0;
     left: -100%;
     width: 100%;
@@ -96,11 +96,28 @@ header {
 }
 
 /* EFEITO HOVER DA NAVBAR */
-.navbar a:hover span:nth-child(1) {
+header .menu a:hover span:nth-child(1) {
 
     left: 100%;
     transition: 1.3s;
 
+}
+
+header .btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/*CONFIGURAÇÃO LOGO PEPE*/
+.logo-pepe {
+    position: absolute;
+    width: 271px;
+    height: 100px;
+    left: 17px;
+    top: 7px;
+    border-radius: 10px;
 }
 
 /*ICONE REDE SOCIAL*/
@@ -132,21 +149,16 @@ header {
 }
 
 
-/*ICONE MENU RESPONSIVEL
-#menu-icon {
-    font-size: 35px;
-    color: white;
-    cursor: pointer;
-    display: none;
-}*/
 
 /*CONFIGURAÇÃO IMAGEM BACKGROUND*/
 .background-configuration {
     background-image: url(../assets/img/imagem-background.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    background-position: 0px 100px;
     width: 100%;
     height: 600px;
+
 }
 
 .texto-background {
@@ -160,8 +172,8 @@ header {
     font-weight: 400;
     font-size: 35px;
     color: #FFFFFF;
-    padding-left: 830px;
-    padding-top: 70px;
+    padding-left: 800px;
+    padding-top: 130px;
 }
 
 /*CONFIGURAÇÃO BOTÃO*/
@@ -187,8 +199,9 @@ header {
 
 .botao {
     padding-left: 1150px;
-    padding-top: 230px;
+    padding-top: 225px;
     position: absolute;
+
 }
 
 /*CONFIGURAÇÃO DO TEXTO MAIN*/
@@ -211,6 +224,36 @@ header {
     padding-left: 70px;
 }
 
+.text-main2 h1 {
+    font-family: 'Righteous';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-top: 150px;
+}
+
+.text-main2 p {
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+
+.text-main2 .img-car {
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-left: 60px;
+    width: 95%;
+    height: 590px;
+    padding-bottom: 135px;
+
+}
 
 footer {
     width: 100%;
@@ -262,4 +305,412 @@ footer {
 .linha {
     border-top: 1px solid #FFFFFF;
     width: 80%;
+}
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1373px) {
+    .botao {
+        padding-left: 1100px;
+    }
+
+    .texto-background h1 {
+        padding-left: 730px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+}
+
+@media (max-width: 1350px) {
+    .botao {
+        padding-left: 1070px;
+    }
+
+    .texto-background h1 {
+        padding-left: 700px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+}
+@media (max-width: 1310px) {
+    .botao {
+        padding-left: 1020px;
+    }
+
+    .texto-background h1 {
+        padding-left: 640px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+}
+
+
+
+@media (max-width: 1250px) {
+    .botao {
+        padding-left: 970px;
+    }
+
+    .texto-background h1 {
+        padding-left: 605px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+}
+
+@media (max-width: 1190px) {
+    .botao {
+        padding-left: 910px;
+    }
+
+    .texto-background h1 {
+        padding-left: 555px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+    }
+}
+
+@media (max-width: 1130px) {
+    .botao {
+        padding-left: 860px;
+    }
+
+    .texto-background h1 {
+        padding-left: 485px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+    }
+}
+
+@media (max-width: 1080px) {
+    .botao {
+        padding-left: 800px;
+    }
+
+    .texto-background h1 {
+        padding-left: 420px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+    }
+    header .btn {
+        display: block;
+    }
+    header .menu {
+        position: fixed;
+        background: #2A2A2A;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+    header .menu.active {
+        right: 0;
+    }
+
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu a {
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 1012px) {
+    .botao {
+        padding-left: 740px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 370px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 1050px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+   
+    }
+}
+
+@media (max-width: 950px) {
+    .botao {
+        padding-left: 670px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 300px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 1050px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+   
+    }
+}
+
+
+@media (max-width: 880px) {
+    .botao {
+        padding-left: 600px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 230px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 1050px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+   
+    }
+}
+
+@media (max-width: 810px) {
+    .botao {
+        padding-left: 530px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 170px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 900px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+
+   
+    }
+}
+
+@media (max-width: 761px) {
+    .icones-redes-sociais{
+        display: none;
+    }
+}
+
+@media (max-width: 746px) {
+    .botao {
+        padding-left: 430px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 80px;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 900px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+    }
+    .text-main p {
+        word-wrap: break-word;
+    }
+}
+@media (max-width: 655px) {
+    .botao {
+        padding-left: 5px;
+        padding-top: 125px;
+    }
+
+    .texto-background h1 {
+        padding-left: 5px;
+        word-wrap: break-word;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 900px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+    }
+    .text-main p {
+        word-wrap: break-word;
+    }
+    .conteudo p{
+        margin: 20px;
+    }
+}
+
+@media (max-width: 487px) {
+    .botao {
+        padding-left: 5px;
+        padding-top: 50px;
+    }
+
+    .texto-background h1 {
+        padding-left: 5px;
+        word-wrap: break-word;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 900px;
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+    }
+    .text-main p {
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 469px) {
+    .botao {
+        padding-left: 5px;
+        padding-top: 50px;
+    }
+
+    .texto-background h1 {
+        padding-left: 5px;
+        word-wrap: break-word;
+
+    }
+
+    .background-configuration {
+        width: 100%;
+        height: 600px;
+        background-size: 900px;
+
+    }
+    .text-main2 p {
+        word-wrap: break-word;
+    }
+    .text-main p {
+        word-wrap: break-word;
+    }
+
+    header .menu {
+        position: fixed;
+        background: #2A2A2A;
+        flex-direction: column;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    header .menu a{
+        font-size: 15px;
+   
+    }
+    .text-main2 .img-car {
+
+        height: 300px;
+
+    
+    }
+}
+
+@media (max-width: 469px) {
+
+    header {
+        padding: 40px 10px;
+
+    }
+    header .menu {
+        min-width: 5px;
+
+    }
 }

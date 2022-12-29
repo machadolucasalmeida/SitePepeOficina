@@ -15,6 +15,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 
 <body>
@@ -23,34 +25,46 @@
         <a href="index.html"><img class="logo-pepe" src="assets/img/PEPE_LOGO_PPP.png" alt="Logo da PEPE OFICINA"></a>
 
         <!--MENU NAVBAR-->
-        <ul class="navbar">
-            <li><a href="index.html" class="ativo"><span></span> Home</a></li>
-            <li><a href="quem somos.html"><span></span> Quem Somos</a></li>
-            <li><a href="sustentabilidade.html"><span></span> Sustentabilidade</a></li>
-            <li><a href="fale conosco.html"><span></span> Fale Conosco</a></li>
-            <li><a href="trabalhe conosco.html"><span></span> Trabalhe Conosco</a></li>
-        </ul>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html"><span></span> Home</a>
+            <a href="quem somos.html"><span></span> Quem Somos</a>
+            <a href="sustentabilidade.html"><span></span> Sustentabilidade</a>
+            <a href="fale conosco.html"><span></span> Fale Conosco</a>
+            <a href="trabalhe conosco.html"><span></span> Trabalhe Conosco</a>
+        </div>
 
         <!--ICONES-->
-        <div class="icones-redes-sociais">
+        <section>
+            <div class="icones-redes-sociais">
 
-            <a href="https://www.facebook.com/pepeoficina/" target="_blank"><img id="logo-facebook"
-                    src="assets/icon/logo_facebook.png" alt="Logo da PEPE OFICINA"></a>
+                <a href="https://www.facebook.com/pepeoficina/" target="_blank"><img id="logo-facebook"
+                        src="assets/icon/logo_facebook.png" alt="Logo da PEPE OFICINA"></a>
+    
+                <a href="https://www.youtube.com/channel/UCElqYywSWgTDsj_i5SAQFgA" target="_blank"><img id="logo-youtube"
+                        src="assets/icon/logo_youtube.png" alt="Logo da PEPE OFICINA"></a>
+    
+                <a href="https://www.instagram.com/pepecentroautomotivo/" target="_blank"><img id="logo-instagram"
+                        src="assets/icon/logo_instagram.png" alt="Logo da PEPE OFICINA"></a>
+    
+                <div class="select-language">
+                    <a href="index.html"><img id="logo-brazil" src="assets/icon/logo_brazil.png"
+                            alt="Logo da PEPE OFICINA"></a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+        </section>
+        
 
-            <a href="https://www.youtube.com/channel/UCElqYywSWgTDsj_i5SAQFgA" target="_blank"><img id="logo-youtube"
-                    src="assets/icon/logo_youtube.png" alt="Logo da PEPE OFICINA"></a>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
 
-            <a href="https://www.instagram.com/pepecentroautomotivo/" target="_blank"><img id="logo-instagram"
-                    src="assets/icon/logo_instagram.png" alt="Logo da PEPE OFICINA"></a>
-
-            <div class="select-language">
-                <a href="index.html"><img id="logo-brazil" src="assets/icon/logo_brazil.png"
-                        alt="Logo da PEPE OFICINA"></a>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
+        
 
             <!--BOTÃO RESPONSIVIDADE-->
-            
+
         </div>
     </header>
 
@@ -123,14 +137,67 @@
         <section class="text-main">
             <h1>Particular, Segurado ou Terceiro <br></h1>
 
-            <p> Um centro automotivo completo e diferente. Fazemos desde uma simples troca de óleo, passando pela
+            <p> Um centro automotivo completo e diferente. Fazemos desde uma simples troca de óleo, <br>
+                passando pela
                 funilaria e repintura até o embelezamento. <br>
 
-                Diferente desde o atendimento com sala de espera climatizada, com prazos de entrega garantidos,
-                materiais de alta qualidade, peças originais e com certificação. <br>
+                Diferente desde o atendimento com sala de espera climatizada, com prazos de entrega <br> garantidos,materiais de alta qualidade, peças originais e com certificação. <br>
 
                 Você pode acompanhar o seu carro, verificando a qualidade do serviço em cada etapa. </p>
+        </section>
 
+        <!--CARDS MAIN-->
+        <section class="config-cards">
+            <div class="card mecanica">
+                <h2>MECÂNICA</h2>
+                <p>Manutenções preventivas, corretivas e diagnósticos computadorizados de nacionais e importados. Deixe
+                    seu carro sempre em dia.</p>
+                <img class='img1' src="assets/img/cards/mecanica.png" alt="">
+            </div>
+
+            <div class="card FP">
+                <h2>FUNILARIA E PINTURA</h2>
+                <p>Amassou, ralou ou capotou? Temos a solução e experiência com mais de 50.000 carros reparados.</p>
+                <img class='img1' src="assets/img/cards/funilaria e pintura.png" alt="">
+            </div>
+
+            <div class="card restauração">
+                <h2>RESTAURAÇÕES</h2>
+                <p>Trazer de volta aquele carro dos sonhos é possível e nós fazemos isso por você! <br> Temos uma equipe
+                    especializada. </p>
+                <img class='img1' src="assets/img/cards/restaurações.png" alt="">
+            </div>
+        </section>
+        <!--TEXTO CONTEUDO MAIN-->
+        <section class="text-main2">
+            <h1>Ótima qualidade em cada um de nossos serviços</h1>
+            <p>Utilizamos nossa rede de profissionais, experiência, especialização e conhecimento acumulado para gerar
+                valor para nossos clientes.</p>
+            <img class="img-car" src="assets/img/car-main.png" alt="">
+        </section>
+        <!--TEXTO PARCERIA-->
+        <section class="text-par">
+            <h1>PARCERIAS</h1>
+            <p>Clique e conheça nossos parceiros:</p>
+        </section>
+        <!--CARD PARCERIA-->
+        <section class="config-cards" id="parcerias">
+
+            <div class="card mecanica">
+                <a href="https://www.lojadomecanico.com.br/" target="_blank"><img class='img'
+                        src="assets/img/cards/lojadomecanico.png" alt=""></a>
+
+            </div>
+
+            <div class="card FP">
+                <a href="https://www.pneustore.com.br/" target="_blank"><img class='img'
+                        src="assets/img/cards/pneustore.png" alt=""></a>
+            </div>
+
+            <div class="card restauração">
+                <a href="https://www.mercadodopintor.com.br/" target="_blank"><img class='img'
+                        src="assets/img/cards/mercadodopintor.png" alt=""></a>
+            </div>
         </section>
     </main>
 
@@ -147,7 +214,7 @@
 
 
     </footer>
-
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

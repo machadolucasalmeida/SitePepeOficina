@@ -1,0 +1,144 @@
+.config-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(75, 75, 75, 0.22);
+    padding: 30px; 
+    margin: 20px;
+    width: 400px;
+    transition: all .3s ease-out;
+    background-color: white;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+    transform-origin: button;
+  }
+  .card h2{
+    font-family: 'Righteous';
+  }
+
+  .card p{
+    padding-top: 10px;
+    font-family: 'Sarala';
+  }
+
+  .img{
+    width: 300px;
+    cursor: pointer;
+  }
+
+  #parcerias{
+    padding-bottom: 200px;
+  }
+
+  .text-par h1{
+    font-family: 'Righteous';
+    font-size: 35px;
+    font-style: normal;
+    color: #FFFFFF;
+    padding-left: 70px;
+  }
+  .text-par p{
+    font-family: 'Sarala';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding-left: 70px;
+    padding-top: 10px;
+  }
+
+  @media (max-width: 1310px) {
+    .card{
+      width: 350px;
+    }
+    .img1{
+      width: 250px;
+    }
+    .img{
+      width: 280px;
+    }
+}
+
+
+@media (max-width: 1190px) {
+  .card{
+    width: 300px;
+  }
+  .img1{
+    width: 250px;
+  }
+  .img{
+    width: 245px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .card{
+    width: 250px;
+  }
+  .img1{
+    width: 200px;
+  }
+  .img{
+    width: 190px;
+  }
+}
+
+@media (max-width: 880px) {
+  .card{
+    width: 220px;
+  }
+  .img1{
+    width: 160px;
+  }
+  .img{
+    width: 150px;
+  }
+}
+
+@media (max-width: 810px) {
+  .config-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+}
+.card{
+  width: 500px;
+}
+.img1{
+  width: 400px;
+}
+.img{
+  width: 400px;
+}
+}
+
+@media (max-width: 487px) {
+  .config-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+}
+.card{
+  width: 350px;
+}
+.img1{
+  width: 280px;
+}
+.img{
+  width: 300px;
+}
+}
