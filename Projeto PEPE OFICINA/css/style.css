@@ -313,6 +313,8 @@ footer {
 
 /*RESPONSIVIDADE*/
 
+
+
 @media (max-width: 1373px) {
     .botao {
         padding-left: 1100px;
@@ -713,4 +715,15 @@ footer {
         min-width: 5px;
 
     }
+}
+
+@media (max-width: 294px) {
+    .logo-pepe {
+        width: 200px;
+        height: 80px;
+        left: 17px;
+        top: 7px;
+        border-radius: 10px;
+    }
+
 }
