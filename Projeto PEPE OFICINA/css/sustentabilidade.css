@@ -1,0 +1,75 @@
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+
+.sustentabilidade{
+    color: white;
+    margin: 70px;
+}
+
+#title-page{
+    padding-top: 7%;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.part2{
+    display: flex;
+}
+#title-subtitle{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#paragraph{
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.image1 img{
+    width: 200px;
+    border-radius: 20px;
+}
+.image1{
+    padding-left: 20%;
+
+}
+
+#title-subtitle2{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 15%;
+}
+
+#paragraph2{
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.secao3{
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    gap: 40px;
+    align-items: center;
+}
+
+.image2 img{
+    width: 250px;
+    border-radius: 20px;
+}
+.image3 img{
+    
+    border-radius: 20px;
+}
