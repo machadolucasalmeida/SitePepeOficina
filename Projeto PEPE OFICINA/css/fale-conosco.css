@@ -139,7 +139,8 @@
     margin-bottom: 20%;
 }
 
-.form input,textarea {
+.form input,
+textarea {
     background: none;
     border: none;
     border-bottom: 1px solid white;
@@ -170,7 +171,7 @@
     font-size: 14px;
 }
 
-#botao{
+#botao {
     border: 1px solid #FFF500;
     background: transparent;
     background: rgba(0, 0, 0, 0.514);
@@ -180,8 +181,9 @@
     height: 35px;
     text-align: center;
     font-weight: bold;
-    
+
 }
+
 #botao:hover {
     box-shadow: 0 0 10px #FFCA08, 0 0 40px #FFCA08, 0 0 80px #FFCA08;
     background-color: #FFCA08;
@@ -191,11 +193,36 @@
 }
 
 
-.mapBox iframe{
+.mapBox iframe {
     width: 100%;
-    
+
 }
 
-::placeholder{
+::placeholder {
     color: white;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.whatsapp-link:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+    transform-origin: button;
 }

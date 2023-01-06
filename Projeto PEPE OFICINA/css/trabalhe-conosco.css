@@ -1,0 +1,107 @@
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.background-paralax {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.background-paralax:nth-of-type(1) {
+    background-image: url(../assets/img/trabalhe-conosco/img001.jpg);
+    margin-top: 10%;
+
+}
+
+.background-paralax h1 span {
+    color: #FFCA08;
+}
+
+.background-paralax h1 {
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    text-shadow: #000 2px 3px 2px;
+}
+
+.text-1 h1 {
+    text-align: center;
+    padding-top: 10%;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+
+}
+
+.text-1 h1 span {
+    color: #FFCA08;
+}
+
+.text-1 p {
+    text-align: left;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin: 70px;
+}
+
+.botao-tr {
+    padding-left: 39%;
+    margin-bottom: 6%;
+}
+
+.botao-tr button {
+    width: 300px;
+    height: 49px;
+    border: 1px solid #FFF500;
+    border-radius: 26px;
+    background: transparent;
+    color: white;
+    font-family: 'Sarala';
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.514);
+    font-weight: bold;
+}
+
+.botao-tr button:hover {
+    box-shadow: 0 0 10px #FFCA08, 0 0 40px #FFCA08, 0 0 80px #FFCA08;
+    background-color: #FFCA08;
+    color: black;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.images-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20PX;
+    padding-left: 3px;
+    padding-bottom: 5%;
+}
+
+.images-btn img {
+    width: 450px;
+    border-radius: 20px;
+    border: 3px solid #FFF500;
+}
+
+.images-btn img:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+  }
